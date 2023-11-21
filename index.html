@@ -186,7 +186,26 @@ As rockets travel beyond the lower atmosphere, the air gets thinner, and fins on
   <script>
     var slideImages = [
     var currentSlide = 0;
+    function showSlide() {
+      document.getElementById('Slide').src = slideImages[currentSlide];
+    }
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slideImages.length;
+      showslide();
+    }
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+      showslide();
+    }
+    function showSlideNumber(slideNumber) {
+      currentSlide = slideNumber - 1;
+      showSlide();
+    }
+    showSlide();
   </script>
 </head>
+
+// <div id="slide-container">
+  // <img id="slide"
 
 </html>
