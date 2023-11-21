@@ -184,30 +184,31 @@ As rockets travel beyond the lower atmosphere, the air gets thinner, and fins on
 <head>
   <hr>
   <h2 style="font-family: Arial, sans-serif"><b>Conference Presentation: Hydraulic vs Electromechanical actuators. What is best for thrust vectoring on rockets?</b></h2>
-  <script>
-    // Array of slide image URLs
-    var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg"];
-    var currentSlide = 0;
-    function showSlide() {
-      document.getElementById('Slide').src = slideImages[currentSlide];
-    }
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slideImages.length;
-      showslide();
-    }
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-      showslide();
-    }
-    // Function to shpw a specific slide based pn the button clicked
-    function showSlideNumber(slideNumber) {
-      currentSlide = slideNumber - 1;
-      showSlide();
-    }
-    // Call showSlide() to display the first slide
-    showSlide();
-  </script>
 </head>
+  
+<script>
+  // Array of slide image URLs
+  var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg"];
+  var currentSlide = 0;
+  function showSlide() {
+    document.getElementById('Slide').src = slideImages[currentSlide];
+  }
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slideImages.length;
+    showslide();
+   }
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+    showslide();
+  }
+  // Function to shpw a specific slide based pn the button clicked
+  function showSlideNumber(slideNumber) {
+    currentSlide = slideNumber - 1;
+    showSlide();
+  }
+  // Call showSlide() to display the first slide
+  showSlide();
+</script>
 
 <div id="slide-container">
   <img id="slide" src="slide1.jpg" alt"=Slide 1" style="width:100%; max-width:800px;">
